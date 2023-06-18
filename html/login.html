@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Mania - login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand col-3" href="index.html"><img src="/Imagens/logo1.JPG"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <form class="form-control-lg col-7 " role="search">
+                      <input class="formulario col-10 " type="search" placeholder="O que deseja buscar?" aria-label="Search" style="text-align: center;">
+                      <button class="botao" type="submit"><img src="/Imagens/lupa.png" alt=""></button>
+                    </form>
+                <ul class="navbar-nav my-auto mb-2 mb-lg-0">
+                  
+                  <li class="nav-item">
+                    <a class="nav-link " href="#"><img src="/Imagens/logo-carrinho.png" alt=""></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#"><img src="/Imagens/icon-usuario.png" alt=""></a>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="login.html" style="color: white;">Registrar - se ou<br><span>logar</span></a>
+                  </li>
+                               
+                </ul>   
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <section id="section-login">
+            <h1>Login</h1>
+            <div class="d-flex justify-content-center">
+                <form method="post" action="" id="login">
+                    <p>
+                        <label for="usuario">Nome: </label>
+                        <input id="usuario" name="usuario" required="required" type="text"
+                            placeholder="Insira o seu usuário" class="form-control" />
+                    </p>
+                    <p>
+                        <label for="senha">Senha: </label>
+                        <input id="senha" name="senha" required="required" type="password"
+                            placeholder="Insira a sua senha" class="form-control" />
+                    </p>
+                    <p>
+                        <input type="button" value="login" class="btn btn-primary" id="bt-login" onclick="login()" />
+                    </p>
+                </form>
+            </div>
+        </section>
+
+        <section id="section-cadastro">
+            <div id="botao-cadastrar">
+                <button type="button" class="btn btn-info">Não é cadastrado ainda? Cadastre-se</button>
+            </div>
+            <div id="form-cadastrar">
+
+                <h1>Criar minha conta</h1>
+                <p>Informe os seus dados abaixo para criar sua conta.</p>
+
+                <div class="d-flex justify-content-center">
+                    <form method="post" action="" id="login">
+                        <p>
+                            <label for="usuario">Usuário: </label>
+                            <input id="usuario" name="usuario" required="required" type="text"
+                                placeholder="ex. nome de usuário" class="form-control" />
+                        </p>
+                        <p>
+                            <label for="email">E-mail: </label>
+                            <input id="email" name="email" required="required" type="email"
+                                placeholder="seu@email.com.br" class="form-control" />
+                        </p>
+                        <p>
+                            <label for="senha">Senha: </label>
+                            <input id="senha" name="senha" required="required" type="password"
+                                placeholder="mínimo de 6 caracteres" class="form-control" />
+                        </p>
+                        <p>
+                            <input type="button" value="Cadastrar" class="btn btn-primary" id="bt-cadastrar"
+                                onclick="cadastro()" />
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <footer>
+        <div class="footer2">
+            <a class="footer1"><img src="/Imagens/logofooter.png" alt=""></a>
+            <p>Informações de contato <br>
+              Lore ipsum
+              <br>
+            <br>
+            <br> Informações de contato
+            <br>lore ipsum
+            
+          </p>
+            <p>localização
+              <br>
+              Centro de são Paulo
+            </p>
+            
+            <a class="imagens"><img src="/Imagens/instagram.png" alt=""></a>
+            <a class="imagens"><img src="/Imagens/facebook.png" alt=""></a>
+            <a class="imagens"><img src="/Imagens/whatsapp.png" alt=""></a>
+            <br>
+            
+          
+     
+          </div>
+          
+             
+    </footer>
+
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/jquery-script.js"></script>
+
+</body>
+
+</html>
